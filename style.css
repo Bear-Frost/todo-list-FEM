@@ -1,3 +1,5 @@
+@import url("./reset.css");
+
 :root {
   /* dark mode them */
   --primary: hsl(235, 21%, 11%);
