@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 /* font-family: "Josefin Sans", sans-serif;*/
 
+@import url("./reset.css");
+
+
 :root {
   /* dark mode them */
   --primary: hsl(235, 21%, 11%);
@@ -10,31 +13,148 @@
   --gray-light: hsl(234, 11%, 52%);
   --gray-dark: hsl(233, 14%, 35%);
   --gray-darker: hsl(237, 14%, 26%);
+  --bright-blue: hsl(220, 98%, 61%);
 }
 
-
-html,
-body {
-  padding: 0;
-  margin: 0;
-}
 
 main {
-  background-color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   font-family: "Josefin Sans", sans-serif;
-  color: white;
+  color: var(--text-color);
 }
 
 header {
-  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
+  height: 12.5rem;
+  padding: 1.8rem;
+}
+
+.title-sun-container {
+  margin-top: 1.5rem;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  color: var(--text-color-light);
+}
+
+.title {
+  font-size: 1.7rem;
+  letter-spacing: 0.6rem;
+  font-weight: 700;
+}
+
+/*this centers the sun with the text*/
+.sun-img-container {
+  height: 1.75rem;
+}
+
+.sun-img-container img {
+  object-fit: cover;
+  width: 1.125rem;
+}
+
+.input-container {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.input-todo {
+  flex-grow: 1;
+  background-color: var(--secondary);
+  border: none;
+  height: 2.8rem;
+  border-radius: 0.2rem;
+  font-size: 0.8rem;
+  box-sizing: border-box;
+  padding-left: 2.8rem;
+  color: var(--text-color-light);
+}
+
+
+
+.input-todo:focus {
+  outline: none;
+}
+
+.check-img-container {
+  padding: 0.2rem;
+  position: absolute;
+  left: 1rem;
+  bottom: 0.95rem;
+  border-radius: 100%;
+  border: 1px solid var(--gray-light);
+
+}
+
+.empty-img {
+  visibility: hidden;
+}
+
+/*bottom part*/
+
+
+
+.bottom-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*taken from header*/
+  width: 375px;
+  padding: 0 1.8rem 1.8rem 1.8rem;
+  font-size: 0.8rem;
+  color: var(--text-color);
+}
+
+.foot-of-todos {
+  background-color: var(--secondary);
+  height: 2.8rem;
+  border-radius: 0 0 0.2rem 0.2rem;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.filter-section {
+  background-color: var(--secondary);
+  height: 2.8rem;
+  border-radius: 0.2rem;
+  width: 100%;
+  padding: 0 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 375px;
+  font-size: 0.7rem;
+  margin-bottom: 2rem;
 }
 
-.title-sun-container {}
+.option {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.option:hover,
+.clear-completed:hover {
+  cursor: pointer;
+  color: var(--text-color-light);
+}
+
+.all-option {
+  color: var(--bright-blue);
+}
