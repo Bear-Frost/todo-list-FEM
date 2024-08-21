@@ -1,0 +1,10 @@
+:root {
+  /* dark mode them */
+  --primary: hsl(235, 21%, 11%);
+  --secondary: hsl(235, 24%, 19%);
+  --text-color: hsl(234, 39%, 85%);
+  --text-color-light: hsl(236, 33%, 92%);
+  --gray-light: hsl(234, 11%, 52%);
+  --gray-dark: hsl(233, 14%, 35%);
+  --gray-darker: hsl(237, 14%, 26%);
+}
