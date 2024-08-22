@@ -145,8 +145,12 @@ header {
 }
 
 .option {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: 0.35rem;
+  margin-right: 0.35rem;
+  background: none;
+  border: none;
+  padding: none;
+  color: var(--text-color);
 }
 
 .option:hover,
