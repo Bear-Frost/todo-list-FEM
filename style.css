@@ -18,21 +18,14 @@
 
 
 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   font-family: "Josefin Sans", sans-serif;
-  color: var(--text-color);
+  background-color: var(--primary);
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 375px;
-  height: 12.5rem;
   padding: 1.8rem;
 }
 
@@ -42,7 +35,6 @@ header {
 
   display: flex;
   justify-content: space-between;
-  width: 100%;
   align-items: center;
   color: var(--text-color-light);
 }
@@ -65,21 +57,18 @@ header {
 
 .input-container {
   margin-top: 2rem;
-  width: 100%;
   display: flex;
   justify-content: center;
   position: relative;
 }
 
 .input-todo {
-  flex-grow: 1;
   background-color: var(--secondary);
   border: none;
-  height: 2.8rem;
   border-radius: 0.2rem;
   font-size: 0.8rem;
   box-sizing: border-box;
-  padding-left: 2.8rem;
+  padding: 1rem;
   color: var(--text-color-light);
 }
 
@@ -112,7 +101,6 @@ header {
   flex-direction: column;
   align-items: center;
   /*taken from header*/
-  width: 375px;
   padding: 0 1.8rem 1.8rem 1.8rem;
   font-size: 0.8rem;
   color: var(--text-color);
@@ -120,10 +108,10 @@ header {
 
 .foot-of-todos {
   background-color: var(--secondary);
-  height: 2.8rem;
+
   border-radius: 0 0 0.2rem 0.2rem;
-  width: 100%;
-  padding: 0 1rem;
+
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -133,10 +121,10 @@ header {
 
 .filter-section {
   background-color: var(--secondary);
-  height: 2.8rem;
+
   border-radius: 0.2rem;
-  width: 100%;
-  padding: 0 1rem;
+
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
