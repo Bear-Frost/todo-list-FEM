@@ -59,16 +59,20 @@ header {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
-  position: relative;
+  align-items: center;
+  background-color: var(--secondary);
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+
 }
 
 .input-todo {
   background-color: var(--secondary);
   border: none;
-  border-radius: 0.2rem;
   font-size: 0.8rem;
   box-sizing: border-box;
-  padding: 1rem;
   color: var(--text-color-light);
 }
 
@@ -79,13 +83,13 @@ header {
 }
 
 .check-img-container {
+  margin-bottom: 0.1rem;
   padding: 0.2rem;
-  position: absolute;
-  left: 1rem;
-  bottom: 0.95rem;
   border-radius: 100%;
   border: 1px solid var(--gray-light);
-
+  height: 1.1rem;
+  width: 1.1rem;
+  margin-right: 0.5rem;
 }
 
 .empty-img {
@@ -108,10 +112,9 @@ header {
 
 .foot-of-todos {
   background-color: var(--secondary);
-
   border-radius: 0 0 0.2rem 0.2rem;
 
-  padding: 1rem;
+  padding: 0.75rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -119,12 +122,16 @@ header {
   margin-bottom: 1rem;
 }
 
+.items-left {
+  margin-right: 1.2rem;
+}
+
 .filter-section {
   background-color: var(--secondary);
 
   border-radius: 0.2rem;
 
-  padding: 1rem;
+  padding: 0.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
