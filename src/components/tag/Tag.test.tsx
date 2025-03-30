@@ -43,7 +43,6 @@ describe('Tag Component', () => {
 
   test('applies custom class names', () => {
     setup({
-      customTagItemClass: 'custom-tag-class',
       customRemoveButtonClass: 'custom-remove-btn-class',
       customTagContentClass: 'custom-content-class',
     });
@@ -55,14 +54,11 @@ describe('Tag Component', () => {
 
   test('applies inline styles', () => {
     setup({
-      tagsStyleProps: { backgroundColor: 'red' },
       removeTagBtnStyleProps: { color: 'blue' },
     });
 
-    const tagItem = screen.getByText('React').closest('li');
     const removeBtn = screen.getByRole('button');
 
-    expect(tagItem).toHaveStyle('background-color: red');
     expect(removeBtn).toHaveStyle('color: blue');
   });
 });

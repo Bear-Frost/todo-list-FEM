@@ -1,6 +1,6 @@
 import React from 'react';
 import { Tag } from '../tag';
-import { Fragment, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import './InputTag.css';
 import type { InputTagProps } from './InputTag.types';
 
@@ -99,9 +99,15 @@ export default function InputTag({
         }}
       >
         {value.map(tag => (
-          <Fragment key={tag}>
+          <li
+            key={tag}
+            className={`input-tag-tag-item ${theme}-input-tag-tag-item ${
+              customClass?.inputTagTagItemElement ||
+              'input-tag-tag-item-element'
+            }`}
+            style={tagsStyleProps}
+          >
             <Tag
-              customTagItemClass={customClass?.inputTagTagItemElement}
               customRemoveButtonClass={customClass?.inputTagTagRemoveBtnElement}
               customTagContentClass={customClass?.inputTagTagContentElement}
               disabled={disabled}
@@ -111,7 +117,7 @@ export default function InputTag({
               theme={theme}
               onRemoveTag={handleRemoveTag}
             />
-          </Fragment>
+          </li>
         ))}
         <li>
           <input

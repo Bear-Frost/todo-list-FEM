@@ -1,10 +1,5 @@
 export type TagProps = {
   /**
-   * Custom class for the tag container element.
-   */
-  customTagItemClass?: string;
-
-  /**
    * Custom class for the tag's remove button.
    */
   customRemoveButtonClass?: string;
@@ -23,11 +18,6 @@ export type TagProps = {
    * The text or value of the tag.
    */
   tagName: string;
-
-  /**
-   * Inline style props for the tag container element.
-   */
-  tagsStyleProps?: React.CSSProperties;
 
   /**
    * Optional theme to style the tag.

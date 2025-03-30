@@ -3,23 +3,16 @@ import './Tag.css';
 import type { TagProps } from './Tag.types';
 
 export default function Tag({
-  customTagItemClass,
   customRemoveButtonClass,
   customTagContentClass,
   disabled,
   tagName,
-  tagsStyleProps,
   removeTagBtnStyleProps,
   theme,
   onRemoveTag,
 }: TagProps) {
   return (
-    <li
-      className={`input-tag-tag-item ${theme}-input-tag-tag-item ${
-        customTagItemClass || 'input-tag-tag-item-element'
-      }`}
-      style={tagsStyleProps}
-    >
+    <>
       <button
         className={`input-tag-tag-remove-btn ${theme}-input-tag-tag-remove-btn ${
           customRemoveButtonClass || 'input-tag-tag-remove-btn-element'
@@ -44,6 +37,6 @@ export default function Tag({
       >
         {tagName}
       </span>
-    </li>
+    </>
   );
 }
